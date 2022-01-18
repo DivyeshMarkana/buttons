@@ -18,6 +18,8 @@ body {
 }
 
 .btn {
+    background-color: #ff255f;
+color           : #f9e506;
     width        : 150px;
     height       : 50px;
     margin       : 2rem auto;
@@ -32,11 +34,9 @@ body {
 .btn__1 {
 
     border          : none;
-    background-color: #ff255f;
     box-shadow      : inset 0 0 0 0 #f9e506;
     /*   transition : .7s cubic-bezier(.5, 0, .5, 1); */
     transition      : ease-out .7s;
-    color           : #f9e506;
 }
 
 .btn__1:hover {
@@ -49,11 +49,9 @@ body {
 .btn__2 {
 
     border          : none;
-    background-color: #ff255f;
     box-shadow      : inset 0 0 0 0 #f9e506;
     /*   transition : .7s cubic-bezier(.5, 0, .5, 1); */
     transition      : ease-out .7s;
-    color           : #f9e506;
 }
 
 .btn__2:hover {
@@ -65,11 +63,9 @@ body {
 .btn__3 {
 
     border          : none;
-    background-color: #ff255f;
     box-shadow      : inset 0 0 0 0 #f9e506;
     /*   transition : .7s cubic-bezier(.5, 0, .5, 1); */
     transition      : ease-out .7s;
-    color           : #f9e506;
 }
 
 .btn__3:hover {
@@ -80,11 +76,9 @@ body {
 
 .btn__4 {
     border          : none;
-    background-color: #ff255f;
     border          : 2px solid #ff255f;
     /*   transition : .7s cubic-bezier(.5, 0, .5, 1); */
     transition      : ease-out .7s;
-    color           : #f9e506;
     position        : relative;
     z-index         : 1;
 }
@@ -111,6 +105,47 @@ body {
     transition   : all .9s ease;
     right        : 0;
     left         : 0;
+}
+
+
+
+
+.button__parent {
+    background-color: #a3a3ff ;
+    border-radius: 10px 0 10px 0;
+    margin: 2rem auto;
+    display: grid;
+    width: 7vw;
+    height: 7vh;
+    cursor: pointer;
+}
+
+.button__parent > * {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.btn { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: all .4s cubic-bezier(.5, 0, .5, 1);
+    z-index: 1;
+}
+
+.button__overlay {
+    background-color: #7171ff99 ;
+    opacity: 0;
+    border-radius: 10px 0 10px 0;
+    transition: all .4s cubic-bezier(.5, 0, .5, 1);
+    transform: translate(0, 0);
+    z-index: 0;
+}
+
+.button__parent:hover .button__overlay{
+   opacity: 1;
+   transform: translate(7px, -7px);
 }
 
 
