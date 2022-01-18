@@ -115,24 +115,56 @@ body {
 
 
 .card__container {
-    max-width: 300px;
+    max-width: 250px;
     margin-inline:auto ;
     margin-top: 3rem;
+    line-height: 1.6 ;
     
 }
 .card {
-    background-image: url("https://source.unsplash.com/500x700/?laptop,dark");
+    background-image: url(16.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding:5em 0 0 ;
     overflow: hidden;
     border-radius: 10px;
+    padding: 10rem 0 0 ;
 }
-.card__body {
+
+
+.card__content {
+    padding: 1em;
+    background: linear-gradient(hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1));
+    color: #fff;
+}
+
+/* .card__body {
     background: linear-gradient(hsl(0 0% 0% / 0),
     hsl(0 0% 0% / 0.6) 10%,
     hsl(0 0% 0% / 1));
     color: #fff;
-    padding: 13em 1em 1em ;
+    padding: 5em 1em 1em ;
+    
+} */
+
+.card__title {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1em; 
+    width: max-content;
+}
+
+.card__title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: #3affbd;
+    height: 3px;
+    width: 100%;
 }
 
