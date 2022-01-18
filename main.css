@@ -172,9 +172,16 @@ body {
 .button {
     display: inline-block;
     background-color: #3affbd;
+    border-radius: 4px;
     color: #111;
     padding: 6px 20px;
     margin-top:1rem ;
     text-decoration: none;
+    transition: 650ms cubic-bezier(.5, 0, .5, 1)
+}
+
+.button:hover,
+.button:focus{
+    background-color: #fff;
 }
 
