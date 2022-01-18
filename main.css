@@ -133,7 +133,8 @@ body {
 
 
 .card__content {
-    padding: 1em;
+    --padding: 1em;
+    padding: var(--padding);
     background: linear-gradient(hsl(0 0% 0% / 0),
     hsl(20 0% 0% / 0.3) 20%,
     hsl(0 0% 0% / 1));
@@ -162,10 +163,10 @@ body {
     content: "";
     position: absolute;
     bottom: -5px;
-    left: 0;
+    left: calc(var(--padding) * -1);
     background: #3affbd;
     height: 3px;
-    width: 100%;
+    width: calc(100% + var(--padding));
 }
 
 .button {
