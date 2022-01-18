@@ -129,6 +129,7 @@ body {
     overflow: hidden;
     border-radius: 10px;
     padding: 10rem 0 0 ;
+    transition: transform 450ms cubic-bezier(.5, 0, .5, 1);
 }
 
 
@@ -167,6 +168,9 @@ body {
     background: #3affbd;
     height: 3px;
     width: calc(100% + var(--padding));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition:  450ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .button {
@@ -183,5 +187,13 @@ body {
 .button:hover,
 .button:focus{
     background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover .card__title::after{
+    transform: scaleX(1);
 }
 
