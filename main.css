@@ -118,5 +118,21 @@ body {
     max-width: 300px;
     margin-inline:auto ;
     margin-top: 3rem;
+    
+}
+.card {
+    background-image: url("https://source.unsplash.com/500x700/?laptop,dark");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:5em 0 0 ;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card__body {
+    background: linear-gradient(hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 0.6) 10%,
+    hsl(0 0% 0% / 1));
+    color: #fff;
+    padding: 13em 1em 1em ;
 }
 
