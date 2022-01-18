@@ -219,10 +219,6 @@ body {
     background-color: #fff;
 }
 
-/* .card:hover {
-    transform: scale(1.05);
-} */
-
 .card:hover .card__title::after {
     transform: scaleX(1);
 }
